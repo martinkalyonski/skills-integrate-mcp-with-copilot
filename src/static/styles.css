@@ -16,12 +16,25 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
   background-color: #1a237e;
   color: white;
   border-radius: 5px;
+}
+
+#admin-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+#admin-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 header h1 {
@@ -162,6 +175,30 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+dialog {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+  margin: auto;
+  padding: 24px;
+  width: min(90vw, 400px);
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+dialog h3 {
+  color: #1a237e;
+  margin-bottom: 20px;
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
 }
 
 .message {
